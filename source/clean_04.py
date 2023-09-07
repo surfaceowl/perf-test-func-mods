@@ -11,7 +11,7 @@ def cleanup_tuple(tup):
     """
 
     # Handle None and np.nan directly
-    if tup is None or tup == np.nan:   # np.isnan(tup) can't convert all
+    if tup is None or tup == np.nan:  # np.isnan(tup) can't convert all
         return np.nan
 
     # Handle the case where the tuple is wrapped inside a list

@@ -9,7 +9,7 @@ def cleanup_tuple(tup):
     fix 3 -- instead of using round(float(tup[1]), 0), use int(tup[1]) to convert score to integer which is faster
     fix 4 -- replace  if tpu is None or np.isnan(tup) with if pd.isnull(tup) to handle both cases
     fix 5 -- readability, replace if not isinstance(tup, tuple) with type(tup) is not tuple; replace isinstance(tup, list) with type(tup) is list
-    
+
     """
 
     # Handle None directly
